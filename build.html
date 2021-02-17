@@ -198,7 +198,7 @@ the command <code class="docutils literal notranslate"><span class="pre">make</s
 </div>
 <div class="section" id="deploying-documentation-on-github-pages">
 <h2>Deploying Documentation on Github Pages<a class="headerlink" href="#deploying-documentation-on-github-pages" title="Permalink to this headline">¶</a></h2>
-<p>The upgrade of the modified <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> HTML files into branch <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>
+<p>The upgrade of the modified <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> <code class="docutils literal notranslate"><span class="pre">HTML</span></code> files into branch <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>
 of this repository can also be done by <code class="docutils literal notranslate"><span class="pre">CMake</span></code>.</p>
 <p>This operation should be done explicitly after building <code class="docutils literal notranslate"><span class="pre">Doxygen</span></code> and <code class="docutils literal notranslate"><span class="pre">sphinx</span></code>.
 Thus the workflow is:</p>
@@ -206,6 +206,21 @@ Thus the workflow is:</p>
 <span class="go">make Deploy</span>
 </pre></div>
 </div>
+<p>It is also possible to directly commit the changes of
+<code class="docutils literal notranslate"><span class="pre">HTML</span></code> by <code class="docutils literal notranslate"><span class="pre">GIT</span></code></p>
+<p>The workflow is</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">#</span>in the directory <span class="sb">`</span>build<span class="sb">`</span>
+<span class="go">git clone https://github.com/brunowu/doxygen_sphinx_example.git</span>
+<span class="go">cd doxygen_sphinx_example</span>
+<span class="go">git checkout gh-pages</span>
+<span class="go">cp -rf ./sphinx/html/* .</span>
+<span class="go">git add --all .</span>
+<span class="go">git commit -m &quot;update the webpages&quot;</span>
+<span class="go">git push origin gh-pages</span>
+<span class="go">cd .. &amp; rm -rf doxygen_sphinx_example</span>
+</pre></div>
+</div>
+<p>The homepage of this example hosted by <code class="docutils literal notranslate"><span class="pre">Github</span> <span class="pre">Pages</span></code> is <a class="reference external" href="https://brunowu.github.io/doxygen_sphinx_example/">HERE</a>.</p>
 </div>
 </div>
 
