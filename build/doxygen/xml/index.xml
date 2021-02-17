@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.20" xml:lang="en-US">
+  <compound refid="class_car" kind="class"><name>Car</name>
+    <member refid="class_car_1a4fa1dc99b461b315ad13e59bdb4cf2c8" kind="variable"><name>brand</name></member>
+    <member refid="class_car_1a696f505486f9c3c1b83bea72af357221" kind="variable"><name>model</name></member>
+    <member refid="class_car_1a735012fb07f61a4b740838640f6969c7" kind="variable"><name>year</name></member>
+    <member refid="class_car_1a841fb24741dfbdbe7a2854ebf91a0dac" kind="function"><name>Car</name></member>
+    <member refid="class_car_1a55c2e1d838c7cf02e817daaa604b439b" kind="function"><name>Display</name></member>
+  </compound>
+  <compound refid="classapidoc_1_1_type_action" kind="class"><name>apidoc::TypeAction</name>
+    <member refid="classapidoc_1_1_type_action_1a855dc9c26d26113c82b939c25b985d09" kind="variable"><name>default</name></member>
+    <member refid="classapidoc_1_1_type_action_1afaecc290fd4fbf2bf6d919359adbc1f6" kind="variable"><name>metavar</name></member>
+    <member refid="classapidoc_1_1_type_action_1a8446b06ead5d36107727ee7a51342eca" kind="function"><name>__init__</name></member>
+    <member refid="classapidoc_1_1_type_action_1a79bb1e9f97f6c9b52beb83538d146281" kind="function"><name>__call__</name></member>
+  </compound>
+  <compound refid="namespaceapidoc" kind="namespace"><name>apidoc</name>
+    <member refid="apidoc_8py_1a6e1e5e7379e33c6af3c90487bfa38611" kind="variable"><name>FileNotFoundError</name></member>
+    <member refid="apidoc_8py_1a52397bb78c3bd4b0579a61cf2fc90988" kind="variable"><name>TYPEDICT</name></member>
+    <member refid="apidoc_8py_1a343ca8d5dcef1c5cf82c5b08fddaa6b1" kind="function"><name>print_info</name></member>
+    <member refid="apidoc_8py_1a9ddc6a30c95319301b20bc7951330831" kind="function"><name>write_file</name></member>
+    <member refid="apidoc_8py_1a6d08fffcab5c415bb61b398db40c977e" kind="function"><name>format_heading</name></member>
+    <member refid="apidoc_8py_1a66ba563cf2eded404af7d0219884dca9" kind="function"><name>format_directive</name></member>
+    <member refid="apidoc_8py_1af4548b1be1b2709efe9b35b833eb9ac5" kind="function"><name>get_function_name_from_ref</name></member>
+    <member refid="apidoc_8py_1afd05c660cee538e079027b69e7ae8669" kind="function"><name>get_typedef_info_from_ref</name></member>
+    <member refid="apidoc_8py_1aa30712875bade7eba45b5f46e7591662" kind="function"><name>clean_function_name</name></member>
+    <member refid="apidoc_8py_1a3e9c5fa4fdba5b3971d795bfd9ac8070" kind="function"><name>clean_function_arguments</name></member>
+    <member refid="apidoc_8py_1a9659c61faf2c67f43d24ee2b7a497e12" kind="function"><name>clean_typedef_base_for_file</name></member>
+    <member refid="apidoc_8py_1aef724e9dd8a9e6de6d4b65eb24cea14f" kind="function"><name>handle_namespace</name></member>
+    <member refid="apidoc_8py_1a1fe22405d32a452d284c0ae6e0a36608" kind="function"><name>handle_file_for_defines</name></member>
+    <member refid="apidoc_8py_1a478fb78561f4b2fc16818f86f8217cfc" kind="function"><name>create_package_file</name></member>
+    <member refid="apidoc_8py_1ada485419decfb05c4c6ea176f637c13e" kind="function"><name>create_modules_toc_file</name></member>
+    <member refid="apidoc_8py_1a85cf8f1b0ce98ab477b6f831848a0611" kind="function"><name>recurse_tree</name></member>
+    <member refid="apidoc_8py_1a73aac4a37651b1962e14eed2224dad25" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespaceconf" kind="namespace"><name>conf</name>
+    <member refid="conf_8py_1aa2c6aefbed1597a70cfb45a760e5977c" kind="variable"><name>project</name></member>
+    <member refid="conf_8py_1ac8ccf456b321bc9052c0691a173b6925" kind="variable"><name>copyright</name></member>
+    <member refid="conf_8py_1a6d7145a280c30059b454017b266c11c0" kind="variable"><name>author</name></member>
+    <member refid="conf_8py_1a90a599726178800ad5a42f6bc2cd5208" kind="variable"><name>release</name></member>
+    <member refid="conf_8py_1a540efa67c53e84c1c353c1df2e37e39c" kind="variable"><name>extensions</name></member>
+    <member refid="conf_8py_1ae989613d8aad2a443902eec5d7f3ec4f" kind="variable"><name>breathe_default_project</name></member>
+    <member refid="conf_8py_1a7942a19d324ba7a3ff32140c7a7cbc2f" kind="variable"><name>breathe_projects</name></member>
+    <member refid="conf_8py_1a1c121fa952c0cbd7ea367a58d2ad7676" kind="variable"><name>breathe_default_members</name></member>
+    <member refid="conf_8py_1a1c97c91acb12488bd8e5e64cd9fc0dc0" kind="variable"><name>source_suffix</name></member>
+    <member refid="conf_8py_1af50129dcc1f90655539f025595a3093b" kind="variable"><name>templates_path</name></member>
+    <member refid="conf_8py_1aa01918cfe75aed3ae059dd96c71c8f08" kind="variable"><name>exclude_patterns</name></member>
+    <member refid="conf_8py_1a7f1b143ff25817758abd21a7db110510" kind="variable"><name>html_theme</name></member>
+  </compound>
+  <compound refid="conf_8py" kind="file"><name>conf.py</name>
+  </compound>
+  <compound refid="docs_2conf_8py" kind="file"><name>conf.py</name>
+  </compound>
+  <compound refid="build_8rst_8txt" kind="file"><name>build.rst.txt</name>
+    <member refid="build_8rst_8txt_1a1cf65f413f0c4b92f9bc4b8bdf82c683" kind="variable"><name>Workflow</name></member>
+    <member refid="build_8rst_8txt_1a4183e55f42bfc10bf04f0302f4030a7f" kind="variable"><name>Moreover</name></member>
+    <member refid="build_8rst_8txt_1a77e8c5371287d9c5b3569748375f1cb0" kind="variable"><name>CMake</name></member>
+  </compound>
+  <compound refid="doxygen_8rst_8txt" kind="file"><name>doxygen.rst.txt</name>
+  </compound>
+  <compound refid="index_8rst_8txt" kind="file"><name>index.rst.txt</name>
+  </compound>
+  <compound refid="car_8cpp" kind="file"><name>car.cpp</name>
+    <member refid="car_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="car_8hpp" kind="file"><name>car.hpp</name>
+  </compound>
+  <compound refid="apidoc_8py" kind="file"><name>apidoc.py</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md___users_xinzhewu_jsc-xwu_codes_doxygen_sphinx_example__r_e_a_d_m_e" kind="page"><name>md__Users_xinzhewu_jsc-xwu_codes_doxygen_sphinx_example_README</name>
+  </compound>
+  <compound refid="dir_78f29ecf7803bd6bc016f4dd39f59a8a" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/sphinx/html/_sources</name>
+  </compound>
+  <compound refid="dir_4fef79e7177ba769987a8da36c892c5f" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build</name>
+  </compound>
+  <compound refid="dir_e2cf8ecc49c41cbc53d71e2f6f58b926" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs</name>
+  </compound>
+  <compound refid="dir_71c996581a55e85103b1678ec9b2381b" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/sphinx/html</name>
+  </compound>
+  <compound refid="dir_23813d926a73599a834023ad22637575" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/sphinx</name>
+  </compound>
+</doxygenindex>

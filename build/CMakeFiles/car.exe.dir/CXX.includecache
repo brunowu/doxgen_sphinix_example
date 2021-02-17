@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/car.cpp
+car.hpp
+/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/car.hpp
+
+/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/car.hpp
+iostream
+-
+string
+-
+

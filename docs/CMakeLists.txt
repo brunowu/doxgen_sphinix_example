@@ -29,9 +29,9 @@ endif()
 
 set(DOXYGEN_INPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
 message("DOXYGEN_INPUT_DIRECTORY = ${DOXYGEN_INPUT_DIRECTORY}")
-set(DOXYGEN_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/doxygen)
+set(DOXYGEN_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/doxygen)
 message("DOXYGEN_OUTPUT_DIRECTORY = ${DOXYGEN_OUTPUT_DIRECTORY}")
-set(DOXYGEN_HTML_OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/html/cppdoc/doxygen)
+set(DOXYGEN_HTML_OUTPUT ${CMAKE_BINARY_DIR}/doxygen/html)
 message("DOXYGEN_HTML_OUTPUT = ${DOXYGEN_HTML_OUTPUT}")
 
 set(DOXYGEN_INDEX_FILE ${DOXYGEN_OUTPUT_DIRECTORY}/xml/index.xml)
@@ -51,7 +51,7 @@ doxygen_add_docs(Doxygen
     COMMENT "Generating docs")
 
 set(SPHINX_SOURCE ${CMAKE_CURRENT_BINARY_DIR})
-set(SPHINX_BUILD ${CMAKE_CURRENT_SOURCE_DIR}/html)
+set(SPHINX_BUILD ${CMAKE_BINARY_DIR}/sphinx/html)
 set(SPHINX_INDEX_FILE ${SPHINX_BUILD}/index.html)
 
 if (UNIX)
@@ -61,7 +61,7 @@ else ()
 endif()
 
 set(RST_FILES
-  ${CMAKE_CURRENT_SOURCE_DIR}/index.rst
+    ${CMAKE_CURRENT_SOURCE_DIR}/*.rst
   )
 
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/conf.py.in ${CMAKE_CURRENT_BINARY_DIR}/conf.py)
@@ -81,3 +81,12 @@ add_custom_command(OUTPUT ${SPHINX_INDEX_FILE}
 
 add_custom_target(Sphinx ALL DEPENDS ${SPHINX_INDEX_FILE})
 
+find_package(Git)
+
+if(Git_FOUND)
+    add_custom_target(Deploy
+        COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/deploy.sh ${CMAKE_BINARY_DIR}/sphinx/old_html ${CMAKE_BINARY_DIR}/sphinx/html
+                  )
+
+
+endif()
