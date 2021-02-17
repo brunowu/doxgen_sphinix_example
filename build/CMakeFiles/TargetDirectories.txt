@@ -1,8 +1,0 @@
-/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles/rebuild_cache.dir
-/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles/edit_cache.dir
-/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles/car.exe.dir
-/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/CMakeFiles/rebuild_cache.dir
-/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/CMakeFiles/edit_cache.dir
-/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/CMakeFiles/Deploy.dir
-/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/CMakeFiles/Sphinx.dir
-/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/CMakeFiles/Doxygen.dir
