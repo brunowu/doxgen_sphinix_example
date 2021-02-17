@@ -1,0 +1,6 @@
+/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles/rebuild_cache.dir
+/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles/edit_cache.dir
+/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/CMakeFiles/rebuild_cache.dir
+/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/CMakeFiles/edit_cache.dir
+/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/CMakeFiles/Sphinx.dir
+/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/CMakeFiles/Doxygen.dir
