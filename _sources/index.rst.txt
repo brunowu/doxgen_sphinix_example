@@ -1,5 +1,5 @@
-Documentation!
-===================================
+Documentation with Doxygen and Sphinx
+=========================================================
 
 .. toctree::
   :maxdepth: 2
@@ -9,4 +9,10 @@ Documentation!
   doxygen
 
 
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search` 
 

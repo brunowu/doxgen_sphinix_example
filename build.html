@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Build &mdash; Doxygen+Sphinx 0.1 documentation</title>
+  <title>Workflow &mdash; An example of Doxygen and Sphinx 0.1 documentation</title>
   
 
   
@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Doxygen Example" href="doxygen.html" />
-    <link rel="prev" title="Documentation!" href="index.html" /> 
+    <link rel="prev" title="Documentation with Doxygen and Sphinx" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -51,7 +51,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Doxygen+Sphinx
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> An example of Doxygen and Sphinx
           
 
           
@@ -84,7 +84,12 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Build</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Workflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-documentation">Building Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deploying-documentation-on-github-pages">Deploying Documentation on Github Pages</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen Example</a></li>
 </ul>
 
@@ -101,7 +106,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Doxygen+Sphinx</a>
+          <a href="index.html">An example of Doxygen and Sphinx</a>
         
       </nav>
 
@@ -132,7 +137,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Build</li>
+      <li>Workflow</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -151,8 +156,57 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="build">
-<h1>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="workflow">
+<h1>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>This example combines <code class="docutils literal notranslate"><span class="pre">Doxygen</span></code> and <code class="docutils literal notranslate"><span class="pre">Sphinx</span></code> with the help
+of <code class="docutils literal notranslate"><span class="pre">Breathe</span></code>. Please make sure that they are available on
+your system.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Sphinx</span></code> and <code class="docutils literal notranslate"><span class="pre">Breathe</span></code> are written in Python, thus it is possible
+to install them from <code class="docutils literal notranslate"><span class="pre">PyPi</span></code>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -U sphinx</span>
+<span class="go">pip install breathe</span>
+</pre></div>
+</div>
+<p>Moreover, the building and deploying of this documentation is based on <code class="docutils literal notranslate"><span class="pre">CMake</span></code>,
+it is also should be available before the execution of this example.</p>
+</div>
+<div class="section" id="building-documentation">
+<h2>Building Documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Get the repository from Github</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone https://github.com/brunowu/doxygen_sphinx_example.git</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Build the documentation with <code class="docutils literal notranslate"><span class="pre">CMake</span></code></p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd doxygen_sphinx_example &amp; mkdir build</span>
+<span class="go">cd build</span>
+<span class="go">cmake ..</span>
+<span class="go">make Doxygen #build doxygen files into ./build/doxygen/</span>
+<span class="go">make Sphinx  #build sphinx html into ./build/sphinx/html/</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is also possible to build Doxygen and Sphinx in one shot by
+the command <code class="docutils literal notranslate"><span class="pre">make</span></code> following the command <code class="docutils literal notranslate"><span class="pre">cmake</span> <span class="pre">..</span></code>.</p>
+</div>
+</div>
+<div class="section" id="deploying-documentation-on-github-pages">
+<h2>Deploying Documentation on Github Pages<a class="headerlink" href="#deploying-documentation-on-github-pages" title="Permalink to this headline">¶</a></h2>
+<p>The upgrade of the modified <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> HTML files into branch <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>
+of this repository can also be done by <code class="docutils literal notranslate"><span class="pre">CMake</span></code>.</p>
+<p>This operation should be done explicitly after building <code class="docutils literal notranslate"><span class="pre">Doxygen</span></code> and <code class="docutils literal notranslate"><span class="pre">sphinx</span></code>.
+Thus the workflow is:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">make</span>
+<span class="go">make Deploy</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -166,7 +220,7 @@
         <a href="doxygen.html" class="btn btn-neutral float-right" title="Doxygen Example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Documentation with Doxygen and Sphinx" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -176,7 +230,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright ...
+        &copy; Copyright Xinzhe Wu
 
     </p>
   </div>
