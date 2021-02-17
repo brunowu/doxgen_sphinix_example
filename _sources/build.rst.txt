@@ -36,7 +36,7 @@ Building Documentation
     cd doxygen_sphinx_example & mkdir build
     cd build
     cmake ..
-    make Doxygen #build doxygen files into ./build/doxygen/
+    make Doxygen #build doxygen files into ./build/docs/doxygen/
     make Sphinx  #build sphinx html into ./build/sphinx/html/
 
 .. note::
