@@ -32,7 +32,7 @@ extensions = ['sphinx.ext.autodoc', 'breathe']
 
 # Breathe Configuration
 breathe_default_project = 'An example of Doxygen and Sphinx'
-breathe_projects = { "An example of Doxygen and Sphinx": "/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/doxygen/xml/" }
+breathe_projects = { "An example of Doxygen and Sphinx": "/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/doxygen/xml/" }
 breathe_default_members = ('members', 'undoc-members')
 
 source_suffix = ['.rst']

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/car.cpp" "/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles/car.exe.dir/car.cpp.o"
+  "/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/car.cpp" "/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles/car.exe.dir/car.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

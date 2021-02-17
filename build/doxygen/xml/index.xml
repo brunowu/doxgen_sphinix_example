@@ -33,31 +33,20 @@
     <member refid="apidoc_8py_1a73aac4a37651b1962e14eed2224dad25" kind="function"><name>main</name></member>
   </compound>
   <compound refid="namespaceconf" kind="namespace"><name>conf</name>
-    <member refid="conf_8py_1aa2c6aefbed1597a70cfb45a760e5977c" kind="variable"><name>project</name></member>
-    <member refid="conf_8py_1ac8ccf456b321bc9052c0691a173b6925" kind="variable"><name>copyright</name></member>
-    <member refid="conf_8py_1a6d7145a280c30059b454017b266c11c0" kind="variable"><name>author</name></member>
-    <member refid="conf_8py_1a90a599726178800ad5a42f6bc2cd5208" kind="variable"><name>release</name></member>
-    <member refid="conf_8py_1a540efa67c53e84c1c353c1df2e37e39c" kind="variable"><name>extensions</name></member>
-    <member refid="conf_8py_1ae989613d8aad2a443902eec5d7f3ec4f" kind="variable"><name>breathe_default_project</name></member>
-    <member refid="conf_8py_1a7942a19d324ba7a3ff32140c7a7cbc2f" kind="variable"><name>breathe_projects</name></member>
-    <member refid="conf_8py_1a1c121fa952c0cbd7ea367a58d2ad7676" kind="variable"><name>breathe_default_members</name></member>
-    <member refid="conf_8py_1a1c97c91acb12488bd8e5e64cd9fc0dc0" kind="variable"><name>source_suffix</name></member>
-    <member refid="conf_8py_1af50129dcc1f90655539f025595a3093b" kind="variable"><name>templates_path</name></member>
-    <member refid="conf_8py_1aa01918cfe75aed3ae059dd96c71c8f08" kind="variable"><name>exclude_patterns</name></member>
-    <member refid="conf_8py_1a7f1b143ff25817758abd21a7db110510" kind="variable"><name>html_theme</name></member>
+    <member refid="conf_8py_1a45653c983098153b78e33600e39230eb" kind="variable"><name>project</name></member>
+    <member refid="conf_8py_1a33fa97cf51dcb25970fbf53f10159589" kind="variable"><name>copyright</name></member>
+    <member refid="conf_8py_1a637c239d256432248aa8d9f3ab0b8c52" kind="variable"><name>author</name></member>
+    <member refid="conf_8py_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
+    <member refid="conf_8py_1ae475e080536acb271a0a0efe56c3ba42" kind="variable"><name>extensions</name></member>
+    <member refid="conf_8py_1a6eba2d2c7ae923054b1c49e686ec89b9" kind="variable"><name>breathe_default_project</name></member>
+    <member refid="conf_8py_1acb47d2c0c2904fa7d36b63142533f383" kind="variable"><name>breathe_projects</name></member>
+    <member refid="conf_8py_1a54585428ce84441199d9dfd7087e2243" kind="variable"><name>breathe_default_members</name></member>
+    <member refid="conf_8py_1a3cb6867401ccd3f25a28d4270f4703c1" kind="variable"><name>source_suffix</name></member>
+    <member refid="conf_8py_1ae850ae634911b713e036b43894fdd525" kind="variable"><name>templates_path</name></member>
+    <member refid="conf_8py_1a7ad48fb6f3e9b129c02346ea0d3527c1" kind="variable"><name>exclude_patterns</name></member>
+    <member refid="conf_8py_1a6c3bfcc1a44546c1c75ce20f55bd0fd6" kind="variable"><name>html_theme</name></member>
   </compound>
   <compound refid="conf_8py" kind="file"><name>conf.py</name>
-  </compound>
-  <compound refid="docs_2conf_8py" kind="file"><name>conf.py</name>
-  </compound>
-  <compound refid="build_8rst_8txt" kind="file"><name>build.rst.txt</name>
-    <member refid="build_8rst_8txt_1a1cf65f413f0c4b92f9bc4b8bdf82c683" kind="variable"><name>Workflow</name></member>
-    <member refid="build_8rst_8txt_1a4183e55f42bfc10bf04f0302f4030a7f" kind="variable"><name>Moreover</name></member>
-    <member refid="build_8rst_8txt_1a77e8c5371287d9c5b3569748375f1cb0" kind="variable"><name>CMake</name></member>
-  </compound>
-  <compound refid="doxygen_8rst_8txt" kind="file"><name>doxygen.rst.txt</name>
-  </compound>
-  <compound refid="index_8rst_8txt" kind="file"><name>index.rst.txt</name>
   </compound>
   <compound refid="car_8cpp" kind="file"><name>car.cpp</name>
     <member refid="car_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
@@ -68,16 +57,10 @@
   </compound>
   <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
-  <compound refid="md___users_xinzhewu_jsc-xwu_codes_doxygen_sphinx_example__r_e_a_d_m_e" kind="page"><name>md__Users_xinzhewu_jsc-xwu_codes_doxygen_sphinx_example_README</name>
+  <compound refid="md___users_xinzhewu_jsc-xwu_codes_doxygen_sphinx_example2__r_e_a_d_m_e" kind="page"><name>md__Users_xinzhewu_jsc-xwu_codes_doxygen_sphinx_example2_README</name>
   </compound>
-  <compound refid="dir_78f29ecf7803bd6bc016f4dd39f59a8a" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/sphinx/html/_sources</name>
+  <compound refid="dir_4fef79e7177ba769987a8da36c892c5f" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build</name>
   </compound>
-  <compound refid="dir_4fef79e7177ba769987a8da36c892c5f" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build</name>
-  </compound>
-  <compound refid="dir_e2cf8ecc49c41cbc53d71e2f6f58b926" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs</name>
-  </compound>
-  <compound refid="dir_71c996581a55e85103b1678ec9b2381b" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/sphinx/html</name>
-  </compound>
-  <compound refid="dir_23813d926a73599a834023ad22637575" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/sphinx</name>
+  <compound refid="dir_e2cf8ecc49c41cbc53d71e2f6f58b926" kind="dir"><name>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs</name>
   </compound>
 </doxygenindex>

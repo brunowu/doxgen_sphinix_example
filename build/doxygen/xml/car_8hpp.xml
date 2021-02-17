@@ -4,13 +4,13 @@
     <compoundname>car.hpp</compoundname>
     <includes local="no">iostream</includes>
     <includes local="no">string</includes>
-    <includedby refid="car_8cpp" local="yes">/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/car.cpp</includedby>
+    <includedby refid="car_8cpp" local="yes">/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/car.cpp</includedby>
     <incdepgraph>
       <node id="3">
         <label>string</label>
       </node>
       <node id="1">
-        <label>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/car.hpp</label>
+        <label>/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/car.hpp</label>
         <link refid="car_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -55,6 +55,6 @@
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/car.hpp"/>
+    <location file="/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/car.hpp"/>
   </compounddef>
 </doxygen>

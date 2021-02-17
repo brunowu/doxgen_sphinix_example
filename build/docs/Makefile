@@ -67,10 +67,10 @@ RM = /opt/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example
+CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build
+CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs//CMakeFiles/progress.marks
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles 0
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs//CMakeFiles/progress.marks
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/clean
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,22 +116,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 docs/CMakeFiles/Deploy.dir/rule:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/Deploy.dir/rule
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/Deploy.dir/rule
 .PHONY : docs/CMakeFiles/Deploy.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ Deploy: docs/CMakeFiles/Deploy.dir/rule
 
 # fast build rule for target.
 Deploy/fast:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Deploy.dir/build.make docs/CMakeFiles/Deploy.dir/build
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Deploy.dir/build.make docs/CMakeFiles/Deploy.dir/build
 .PHONY : Deploy/fast
 
 # Convenience name for target.
 docs/CMakeFiles/Sphinx.dir/rule:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/Sphinx.dir/rule
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/Sphinx.dir/rule
 .PHONY : docs/CMakeFiles/Sphinx.dir/rule
 
 # Convenience name for target.
@@ -156,12 +156,12 @@ Sphinx: docs/CMakeFiles/Sphinx.dir/rule
 
 # fast build rule for target.
 Sphinx/fast:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Sphinx.dir/build.make docs/CMakeFiles/Sphinx.dir/build
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Sphinx.dir/build.make docs/CMakeFiles/Sphinx.dir/build
 .PHONY : Sphinx/fast
 
 # Convenience name for target.
 docs/CMakeFiles/Doxygen.dir/rule:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/Doxygen.dir/rule
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/Doxygen.dir/rule
 .PHONY : docs/CMakeFiles/Doxygen.dir/rule
 
 # Convenience name for target.
@@ -171,7 +171,7 @@ Doxygen: docs/CMakeFiles/Doxygen.dir/rule
 
 # fast build rule for target.
 Doxygen/fast:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Doxygen.dir/build.make docs/CMakeFiles/Doxygen.dir/build
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Doxygen.dir/build.make docs/CMakeFiles/Doxygen.dir/build
 .PHONY : Doxygen/fast
 
 # Help Target
@@ -196,6 +196,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

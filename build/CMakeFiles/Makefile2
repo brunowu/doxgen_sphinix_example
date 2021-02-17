@@ -63,10 +63,10 @@ RM = /opt/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example
+CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build
+CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -115,14 +115,14 @@ docs/clean: docs/CMakeFiles/Doxygen.dir/clean
 CMakeFiles/car.exe.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/car.exe.dir/build.make CMakeFiles/car.exe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/car.exe.dir/build.make CMakeFiles/car.exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles --progress-num=3,4 "Built target car.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles --progress-num=3,4 "Built target car.exe"
 .PHONY : CMakeFiles/car.exe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/car.exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/car.exe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles 0
 .PHONY : CMakeFiles/car.exe.dir/rule
 
 # Convenience name for target.
@@ -142,14 +142,14 @@ CMakeFiles/car.exe.dir/clean:
 docs/CMakeFiles/Deploy.dir/all:
 	$(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Deploy.dir/build.make docs/CMakeFiles/Deploy.dir/depend
 	$(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Deploy.dir/build.make docs/CMakeFiles/Deploy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles --progress-num= "Built target Deploy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles --progress-num= "Built target Deploy"
 .PHONY : docs/CMakeFiles/Deploy.dir/all
 
 # Build rule for subdir invocation for target.
 docs/CMakeFiles/Deploy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/Deploy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles 0
 .PHONY : docs/CMakeFiles/Deploy.dir/rule
 
 # Convenience name for target.
@@ -169,14 +169,14 @@ docs/CMakeFiles/Deploy.dir/clean:
 docs/CMakeFiles/Sphinx.dir/all: docs/CMakeFiles/Doxygen.dir/all
 	$(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Sphinx.dir/build.make docs/CMakeFiles/Sphinx.dir/depend
 	$(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Sphinx.dir/build.make docs/CMakeFiles/Sphinx.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles --progress-num=2 "Built target Sphinx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles --progress-num=2 "Built target Sphinx"
 .PHONY : docs/CMakeFiles/Sphinx.dir/all
 
 # Build rule for subdir invocation for target.
 docs/CMakeFiles/Sphinx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/Sphinx.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles 0
 .PHONY : docs/CMakeFiles/Sphinx.dir/rule
 
 # Convenience name for target.
@@ -196,14 +196,14 @@ docs/CMakeFiles/Sphinx.dir/clean:
 docs/CMakeFiles/Doxygen.dir/all:
 	$(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Doxygen.dir/build.make docs/CMakeFiles/Doxygen.dir/depend
 	$(MAKE) $(MAKESILENT) -f docs/CMakeFiles/Doxygen.dir/build.make docs/CMakeFiles/Doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles --progress-num=1 "Built target Doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles --progress-num=1 "Built target Doxygen"
 .PHONY : docs/CMakeFiles/Doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 docs/CMakeFiles/Doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/Doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles 0
 .PHONY : docs/CMakeFiles/Doxygen.dir/rule
 
 # Convenience name for target.

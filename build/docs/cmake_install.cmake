@@ -1,4 +1,4 @@
-# Install script for directory: /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/docs
+# Install script for directory: /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -62,10 +62,10 @@ RM = /opt/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example
+CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build
+CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build
 
 # Utility rule file for Sphinx.
 
@@ -77,9 +77,9 @@ docs/CMakeFiles/Sphinx: sphinx/html/index.html
 
 sphinx/html/index.html: ../docs/*.rst
 sphinx/html/index.html: ../docs/conf.py.in
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating documentation with Sphinx"
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs && /opt/local/bin/cmake -E copy_if_different /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/docs/*.rst /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs && /usr/local/Frameworks/Python.framework/Versions/3.8/bin/python3.8 -m sphinx -b html /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/sphinx/html
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating documentation with Sphinx"
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs && /opt/local/bin/cmake -E copy_if_different /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/docs/*.rst /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs && /usr/local/Frameworks/Python.framework/Versions/3.8/bin/python3.8 -m sphinx -b html /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/sphinx/html
 
 Sphinx: docs/CMakeFiles/Sphinx
 Sphinx: sphinx/html/index.html
@@ -93,10 +93,10 @@ docs/CMakeFiles/Sphinx.dir/build: Sphinx
 .PHONY : docs/CMakeFiles/Sphinx.dir/build
 
 docs/CMakeFiles/Sphinx.dir/clean:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs && $(CMAKE_COMMAND) -P CMakeFiles/Sphinx.dir/cmake_clean.cmake
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs && $(CMAKE_COMMAND) -P CMakeFiles/Sphinx.dir/cmake_clean.cmake
 .PHONY : docs/CMakeFiles/Sphinx.dir/clean
 
 docs/CMakeFiles/Sphinx.dir/depend:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/CMakeFiles/Sphinx.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2 /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/CMakeFiles/Sphinx.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : docs/CMakeFiles/Sphinx.dir/depend
 

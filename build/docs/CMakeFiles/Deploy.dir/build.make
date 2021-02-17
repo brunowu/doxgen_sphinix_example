@@ -62,10 +62,10 @@ RM = /opt/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example
+CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build
+CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build
 
 # Utility rule file for Deploy.
 
@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build
 include docs/CMakeFiles/Deploy.dir/progress.make
 
 docs/CMakeFiles/Deploy:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs && bash /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/docs/deploy.sh /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/sphinx/old_html /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/sphinx/html
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs && bash /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/docs/deploy.sh /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/sphinx/old_html /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/sphinx/html
 
 Deploy: docs/CMakeFiles/Deploy
 Deploy: docs/CMakeFiles/Deploy.dir/build.make
@@ -86,10 +86,10 @@ docs/CMakeFiles/Deploy.dir/build: Deploy
 .PHONY : docs/CMakeFiles/Deploy.dir/build
 
 docs/CMakeFiles/Deploy.dir/clean:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs && $(CMAKE_COMMAND) -P CMakeFiles/Deploy.dir/cmake_clean.cmake
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs && $(CMAKE_COMMAND) -P CMakeFiles/Deploy.dir/cmake_clean.cmake
 .PHONY : docs/CMakeFiles/Deploy.dir/clean
 
 docs/CMakeFiles/Deploy.dir/depend:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/CMakeFiles/Deploy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2 /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/CMakeFiles/Deploy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : docs/CMakeFiles/Deploy.dir/depend
 

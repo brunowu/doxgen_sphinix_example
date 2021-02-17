@@ -62,10 +62,10 @@ RM = /opt/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example
+CMAKE_SOURCE_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build
+CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build
 
 # Utility rule file for Doxygen.
 
@@ -73,9 +73,9 @@ CMAKE_BINARY_DIR = /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build
 include docs/CMakeFiles/Doxygen.dir/progress.make
 
 docs/CMakeFiles/Doxygen: docs/Doxyfile.Doxygen
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating docs"
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/docs && /opt/local/bin/cmake -E make_directory /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/doxygen
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/docs && /opt/local/bin/doxygen /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/Doxyfile.Doxygen
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating docs"
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/docs && /opt/local/bin/cmake -E make_directory /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/doxygen
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/docs && /opt/local/bin/doxygen /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/Doxyfile.Doxygen
 
 Doxygen: docs/CMakeFiles/Doxygen
 Doxygen: docs/CMakeFiles/Doxygen.dir/build.make
@@ -88,10 +88,10 @@ docs/CMakeFiles/Doxygen.dir/build: Doxygen
 .PHONY : docs/CMakeFiles/Doxygen.dir/build
 
 docs/CMakeFiles/Doxygen.dir/clean:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs && $(CMAKE_COMMAND) -P CMakeFiles/Doxygen.dir/cmake_clean.cmake
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs && $(CMAKE_COMMAND) -P CMakeFiles/Doxygen.dir/cmake_clean.cmake
 .PHONY : docs/CMakeFiles/Doxygen.dir/clean
 
 docs/CMakeFiles/Doxygen.dir/depend:
-	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/CMakeFiles/Doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2 /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs /Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/CMakeFiles/Doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : docs/CMakeFiles/Doxygen.dir/depend
 

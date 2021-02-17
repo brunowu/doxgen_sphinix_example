@@ -42,7 +42,7 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Breathe<sp/>Configuration</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal">breathe_default_project<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;An<sp/>example<sp/>of<sp/>Doxygen<sp/>and<sp/>Sphinx&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal">breathe_projects<sp/>=<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;An<sp/>example<sp/>of<sp/>Doxygen<sp/>and<sp/>Sphinx&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/docs/doxygen/xml/&quot;</highlight><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">breathe_projects<sp/>=<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;An<sp/>example<sp/>of<sp/>Doxygen<sp/>and<sp/>Sphinx&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/doxygen/xml/&quot;</highlight><highlight class="normal"><sp/>}</highlight></codeline>
 <codeline lineno="36"><highlight class="normal">breathe_default_members<sp/>=<sp/>(</highlight><highlight class="stringliteral">&apos;members&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;undoc-members&apos;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal">source_suffix<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;.rst&apos;</highlight><highlight class="normal">]</highlight></codeline>
@@ -65,6 +65,6 @@
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example/build/conf.py"/>
+    <location file="/Users/xinzhewu/jsc-xwu/codes/doxygen_sphinx_example2/build/docs/conf.py"/>
   </compounddef>
 </doxygen>
