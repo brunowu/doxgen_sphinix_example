@@ -29,9 +29,9 @@ endif()
 
 set(DOXYGEN_INPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
 message("DOXYGEN_INPUT_DIRECTORY = ${DOXYGEN_INPUT_DIRECTORY}")
-set(DOXYGEN_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/doxygen)
+set(DOXYGEN_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/doxygen)
 message("DOXYGEN_OUTPUT_DIRECTORY = ${DOXYGEN_OUTPUT_DIRECTORY}")
-set(DOXYGEN_HTML_OUTPUT ${CMAKE_BINARY_DIR}/doxygen/html)
+set(DOXYGEN_HTML_OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/doxygen/html)
 message("DOXYGEN_HTML_OUTPUT = ${DOXYGEN_HTML_OUTPUT}")
 
 set(DOXYGEN_INDEX_FILE ${DOXYGEN_OUTPUT_DIRECTORY}/xml/index.xml)
@@ -68,13 +68,11 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/conf.py.in ${CMAKE_CURRENT_BINARY_DIR
 
 add_custom_command(OUTPUT ${SPHINX_INDEX_FILE}
                    COMMAND ${CMAKE_COMMAND} -E copy_if_different ${RST_FILES} ${CMAKE_CURRENT_BINARY_DIR}    
-                   #COMMAND ${Python_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/apidoc.py -f -o cppdoc ${CMAKE_CURRENT_BINARY_DIR}/doxygen/xml/
                    COMMAND  ${Python_EXECUTABLE} -m sphinx -b html
                    ${SPHINX_SOURCE} ${SPHINX_BUILD}
                    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
                    DEPENDS
                    ${RST_FILES}
-                   #${CMAKE_CURRENT_SOURCE_DIR}/apidoc.py
                    Doxygen
                    MAIN_DEPENDENCY ${CMAKE_CURRENT_SOURCE_DIR}/conf.py.in
                    COMMENT "Generating documentation with Sphinx")
@@ -86,7 +84,7 @@ find_package(Git)
 if(Git_FOUND)
     add_custom_target(Deploy
         COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/deploy.sh ${CMAKE_BINARY_DIR}/sphinx/old_html ${CMAKE_BINARY_DIR}/sphinx/html
-                  )
+        COMMENT "Uploading documentation into Github Pages")
 
 
 endif()

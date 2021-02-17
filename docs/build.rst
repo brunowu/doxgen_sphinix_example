@@ -47,7 +47,7 @@ Building Documentation
 Deploying Documentation on Github Pages
 ---------------------------------------
 
-The upgrade of the modified ``sphinx`` HTML files into branch ``gh-pages``
+The upgrade of the modified ``sphinx`` ``HTML`` files into branch ``gh-pages``
 of this repository can also be done by ``CMake``.
 
 This operation should be done explicitly after building ``Doxygen`` and ``sphinx``.
@@ -58,5 +58,21 @@ Thus the workflow is:
     make
     make Deploy
 
-    
+It is also possible to directly commit the changes of
+``HTML`` by ``GIT`` 
 
+The workflow is
+
+.. code-block::  console
+
+    #in the directory `build`
+    git clone https://github.com/brunowu/doxygen_sphinx_example.git
+    cd doxygen_sphinx_example
+    git checkout gh-pages
+    cp -rf ./sphinx/html/* .
+    git add --all .
+    git commit -m "update the webpages"
+    git push origin gh-pages
+    cd .. & rm -rf doxygen_sphinx_example
+
+The homepage of this example hosted by ``Github Pages`` is `HERE <https://brunowu.github.io/doxygen_sphinx_example/>`__.
