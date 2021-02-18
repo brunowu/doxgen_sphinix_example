@@ -83,7 +83,7 @@ The workflow is
 
 The homepage of this example hosted by ``Github Pages`` is `HERE <https://brunowu.github.io/doxygen_sphinx_example/>`__.
 
-Build PDF Docuementation
+Build PDF Documentation
 -------------------------
 
 It is also generated a ``pdf`` version of documentation into ``./build/sphinx/pdf/``. Generation of
