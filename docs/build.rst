@@ -16,7 +16,13 @@ to install them from ``PyPi``.
     pip install -U sphinx
     pip install breathe
 
+This is example use also a theme provided by `Read the Docs <https://readthedocs.org/>`__.
+You can install as follows:
 
+.. code-block:: console
+
+    pip install sphinx-rtd-theme
+    
 Moreover, the building and deploying of this documentation is based on ``CMake``,
 it is also should be available before the execution of this example.
 
@@ -36,7 +42,7 @@ Building Documentation
     cd doxygen_sphinx_example & mkdir build
     cd build
     cmake ..
-    make Doxygen #build doxygen files into ./build/doxygen/
+    make Doxygen #build doxygen files into ./build/docs/doxygen/
     make Sphinx  #build sphinx html into ./build/sphinx/html/
 
 .. note::
@@ -76,3 +82,15 @@ The workflow is
     cd .. & rm -rf doxygen_sphinx_example
 
 The homepage of this example hosted by ``Github Pages`` is `HERE <https://brunowu.github.io/doxygen_sphinx_example/>`__.
+
+Build PDF Docuementation
+-------------------------
+
+It is also generated a ``pdf`` version of documentation into ``./build/sphinx/pdf/``. Generation of
+``pdf`` documentation won't be done with one shot command ``make``. You need to compile it explicitly
+with following command.
+
+.. code-block::  console
+
+    make PDF
+

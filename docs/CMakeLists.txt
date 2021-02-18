@@ -75,9 +75,10 @@ add_custom_command(OUTPUT ${SPHINX_INDEX_FILE}
                    ${RST_FILES}
                    Doxygen
                    MAIN_DEPENDENCY ${CMAKE_CURRENT_SOURCE_DIR}/conf.py.in
-                   COMMENT "Generating documentation with Sphinx")
+                   COMMENT "Generating HTML documentation with Sphinx into {CMAKE_BINARY_DIR}/sphinx/html/")
 
 add_custom_target(Sphinx ALL DEPENDS ${SPHINX_INDEX_FILE})
+
 
 find_package(Git)
 
@@ -85,6 +86,29 @@ if(Git_FOUND)
     add_custom_target(Deploy
         COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/deploy.sh ${CMAKE_BINARY_DIR}/sphinx/old_html ${CMAKE_BINARY_DIR}/sphinx/html
         COMMENT "Uploading documentation into Github Pages")
-
-
 endif()
+
+find_package(LATEX)
+set(SPHINX_TEX_BUILD ${CMAKE_BINARY_DIR}/sphinx/latex)
+set(SPHINX_TEX_INDEX_FILE ${SPHINX_TEX_BUILD}/index.tex)
+
+add_custom_command(OUTPUT ${SPHINX_TEX_INDEX_FILE}
+                   COMMAND ${CMAKE_COMMAND} -E copy_if_different ${RST_FILES} ${CMAKE_CURRENT_BINARY_DIR}
+                   COMMAND ${Python_EXECUTABLE} -m sphinx -b latex
+                   ${SPHINX_SOURCE} ${SPHINX_TEX_BUILD}
+                   WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+                   DEPENDS
+                   ${RST_FILES}
+                   Doxygen
+                   MAIN_DEPENDENCY ${CMAKE_CURRENT_SOURCE_DIR}/conf.py.in
+                   COMMENT "Generating LATEX documentation with Sphinx into {CMAKE_BINARY_DIR}/sphinx/latex/")
+
+set(LATEX_PDF_FILE ${CMAKE_PROJECT_NAME}_${CMAKE_PROJECT_VERSION}.pdf)
+make_directory(${CMAKE_BINARY_DIR}/sphinx/pdf)
+add_custom_target(PDF
+    COMMAND ${XELATEX_COMPILER} -output-directory ${SPHINX_TEX_BUILD} -synctex=1 -interaction=nonstopmode ${CMAKE_BINARY_DIR}/sphinx/latex/*.tex
+                  COMMAND ${CMAKE_COMMAND} -E copy *.pdf ${CMAKE_BINARY_DIR}/sphinx/pdf/${LATEX_PDF_FILE}.pdf
+                  WORKING_DIRECTORY ${SPHINX_TEX_BUILD}
+                  DEPENDS ${SPHINX_TEX_INDEX_FILE}
+                  COMMENT "Generating PDF documentation into ${CMAKE_BINARY_DIR}/sphinx/pdf/")
+
