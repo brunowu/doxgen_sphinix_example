@@ -88,6 +88,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#building-documentation">Building Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#deploying-documentation-on-github-pages">Deploying Documentation on Github Pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-pdf-docuementation">Build PDF Docuementation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen Example</a></li>
@@ -169,6 +170,11 @@ to install them from <code class="docutils literal notranslate"><span class="pre
 <span class="go">pip install breathe</span>
 </pre></div>
 </div>
+<p>This is example use also a theme provided by <a class="reference external" href="https://readthedocs.org/">Read the Docs</a>.
+You can install as follows:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install sphinx-rtd-theme</span>
+</pre></div>
+</div>
 <p>Moreover, the building and deploying of this documentation is based on <code class="docutils literal notranslate"><span class="pre">CMake</span></code>,
 it is also should be available before the execution of this example.</p>
 </div>
@@ -221,6 +227,15 @@ Thus the workflow is:</p>
 </pre></div>
 </div>
 <p>The homepage of this example hosted by <code class="docutils literal notranslate"><span class="pre">Github</span> <span class="pre">Pages</span></code> is <a class="reference external" href="https://brunowu.github.io/doxygen_sphinx_example/">HERE</a>.</p>
+</div>
+<div class="section" id="build-pdf-docuementation">
+<h2>Build PDF Docuementation<a class="headerlink" href="#build-pdf-docuementation" title="Permalink to this headline">¶</a></h2>
+<p>It is also generated a <code class="docutils literal notranslate"><span class="pre">pdf</span></code> version of documentation into <code class="docutils literal notranslate"><span class="pre">./build/sphinx/pdf/</span></code>. Generation of
+<code class="docutils literal notranslate"><span class="pre">pdf</span></code> documentation won’t be done with one shot command <code class="docutils literal notranslate"><span class="pre">make</span></code>. You need to compile it explicitly
+with following command.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">make PDF</span>
+</pre></div>
+</div>
 </div>
 </div>
 
