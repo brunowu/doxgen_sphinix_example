@@ -83,11 +83,11 @@ The workflow is
 
 The homepage of this example hosted by ``Github Pages`` is `HERE <https://brunowu.github.io/doxygen_sphinx_example/>`__.
 
-Build PDF Docuementation
+Build PDF Documentation
 -------------------------
 
-It is also generated a ``pdf`` version of documentation into ``./build/sphinx/pdf/``. Generation of
-``pdf`` documentation won't be done with one shot command ``make``. You need to compile it explicitly
+A ``pdf`` version of documentation is also generated into ``./build/sphinx/pdf/``. Generation of
+``pdf`` documentation won't be done with one shot command ``make``. One needs to compile it explicitly
 with following command.
 
 .. code-block::  console
